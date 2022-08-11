@@ -41,17 +41,35 @@ class Main {
   }
  System.out.println();
        
-    
+    System.out.println("MATRIZ AUMENTADA");
     for (int i = 0; i < array.length; i++) {
-      for (int j = 0; j < array[i].length; j++) {
-        System.out.print(array[i][j] + " ");
+      for (int j = 0; j < array[i].length-1; j++) {
+        System.out.print(array[i][j] + "   ");
 
       }
-
+      
+            System.out.print("|"+array[i][columna]);
             System.out.println();
        
 }
-  
+
+
+    System.out.println("inicio de operacionse ");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
 
   }
   }
