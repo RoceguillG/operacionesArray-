@@ -2,8 +2,9 @@ import java.util.Scanner;
 
 class Main {
   public static void main(String[] args) {
-    System.out.println("Hello world!");
+   
     Scanner sc = new Scanner (System.in);
+    double respuesta=0;
     
     System.out.println("Ingrese numero de incognitas: ");
     int n=sc.nextInt();
@@ -54,12 +55,77 @@ class Main {
 }
 
 
-    System.out.println("inicio de operacionse ");
+    System.out.println("inicio de operaciones: ");
+
+
+    double vectorAyuda[]=new double[n];
+for (int fil = 0; fil < array.length; fil++) {
+  for (int col = 0; col < array[fil].length; col++) {
+
+    if(fil==col){//entrando a las diagonal de la matriz identidad.
+      respuesta = array[fil][col];
+      
+      System.out.println("Esta es la diagonal datos: "+respuesta);
+      
+      for (int i = 0; i < array[fil].length; i++) {
+        //EN ESTA PARTE SE DIVIDEN LAS DIAGONALES POR SU MISMO VALOR
+        //EN TODA LA LINEA DE ECUACIONES  
+
+        if(respuesta!=0){
+          //por lo tanto se deberia sumar con otra fila o reglon
+          
+            array[fil][i]=array[fil][i]/respuesta;
+        }
+        
+      //necesito que se mueva si encuentra un 0 en la matriz identidad
+       
+    else{
+      
+    }
+
+        
+//         //PARA COMVERTIRLO EN 0 EN LOS EXTREMOS DELA DIAGONAL
+//         //SE USARA OTRO FOR
+//         for (i = 0; i < array.length; i++) {
+//           respuesta=array[i][col];
+//           //otro for para obviar la diagonal ya establecida
+
+//             for (int j = 0; j < array[i].length; j++) {
+//             if (i==fil) 
+//               break;
+//             else{
+//                   array[i][j]=array[i][j]-(respuesta*array[fil][j]);
+// }
+//             }
+          
+//         }//termina lo que no me sale bien
 
 
 
+        
+        
+      }
 
 
+      
+    }
+  
+}
+}
+
+ System.out.println();
+
+    System.out.println("MATRIZ IDENTIDAD? quedara resuelta?");
+    for (int i = 0; i < array.length; i++) {
+      for (int j = 0; j < array[i].length-1; j++) {
+        System.out.print(array[i][j] + "   ");
+
+      }
+      
+            System.out.print("|"+array[i][columna]);
+            System.out.println();
+       
+}
 
 
 
@@ -71,6 +137,11 @@ class Main {
 
     
 
-  }
+  
+
+
+  
+}
+  
   }
     
